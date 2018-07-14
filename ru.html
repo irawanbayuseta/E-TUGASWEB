@@ -1,0 +1,114 @@
+<html>
+<head>
+	<script language="JavaScript">
+	var txt="Destination Wonderfull - Ranca Upas Bandung. " ;
+	var speed=300;
+	var refresh=null;
+	function action() { document.title=txt;
+	txt=txt.substring(1,txt.length)+txt.charAt(0);
+	refresh=setTimeout("action()",speed);}action();
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body background="bc.jpg">
+    </div>	
+	<div class="container">
+		<div class="header">
+			<h1 align="center">Destination Wonderfull</h1>
+			<h4 align="center">Selamat Datang</h4>
+			<h5 align="center"> Disini Kami Menyediakan tempat wisata yang cocok buat Anda</h5>
+		</div>
+		<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html">Index</a>
+  </div>
+		<div class="main">
+			<div class="left">
+				<h3 align="center">Mendaftar</h3>
+					<ul>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="daftar.html">Daftar</a></li>
+					</ul>
+				
+			</div>
+			<div class="isi">
+				<h3 align="center">Ranca Upas – Wisata Asyik Di Kampung Cai Ranca Upas</h3>
+				<p  align="center"><strong>Travel Destinations /<a href="#"> 1.5K</a> view</strong></p>
+				<p><img src="rancaupas/1.jpg" alt=""></p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Destination Wonderfull – Ranca Upas – Tempat Wisata Di Bandung – Populer dengan nama Ranca Upas atau Kampung Cai Ranca Upas adalah salah satu tempat wisata di Bandung Selatan yang terbaik dan merupakan 
+				kawasan bumi perkemahan terpopuler bagi para wisatawan.<br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;Ranca Upas  memiliki luas area yang sangat luas sekitar 215 Hektar.Sebagai salah satu kawasan Hutan lindung di Bandung,kawasan Upas merupakan sebagai tempat konservasi berbagai macam tumbuhan Flora langka seperti Jamuju, Huru, Hamirug, Kihujan, Kitambang serta 
+				aneka Fauna seperti Burung dan Rusa.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;Tempat Wisata Di Bandung Selatan ini sendiri berada pada ketinggian 1700 meter di atas permukaan air laut,sehingga suhu udara di kawasan wisata alam yang masih sangat alami ini sangat dingin dan ekstrim berkisar di 17 derajat Celsius sampe 20 derajat Celsius.
+				Bahkan apabila di malam hari,suhu di sini bisa mencapai suhu terendah di bawah 0 derajat Celsius.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;Jadi apabila anda mencari objek wisata di bandung selatan selain Kawah Putih,Situ Patenggang dan Cimanggu untuk berwisata bersama keluarga,teman atau pasangan dengan tujuan ingin menikmati keindahan alam pegunungan yang sangat indah dan alami serta merasakan sensasi suhu udara yang sangat ekstrim 
+				super dingin,penulis merujuk kawasan wisata yang terkenal dengan nama Kampung Cai ini.<br>
+				
+               <p  align="center"><strong>&nbsp;1&nbsp;</a></strong></p>
+				
+			</div>			
+			<div class="right">
+				<h3 align="center">Terpopuler</h3>
+				<p>
+					<ul>
+					<li><a href="sumatra.html">Sumatra</a></li>
+					<li><a href="kalimantan.html">Kalimantan</a></li>
+					<li><a href="sulawesi.html">Sulawesi</a></li>
+					<li><a href="jawa.html">Jawa</a></li>
+					<li><a href="papua.html">Irian Jaya</a></li>
+					<li><a href="editor.html">>></a></li>
+					</ul>
+				</p>
+			</div>
+            <div class="right">
+				<h3 align="center">Search</h3>
+				<p>
+					<ul>
+					<li><input type="text" name="username"></li><br>
+					<button class="tombol5" type="submit">Search</button>
+					</ul>
+				</p>
+			</div>						
+		</div>
+	
+			<div class="footer">
+			<p align="center">| COPYRIGHT © 2018/2019 PEMROGRAMAN KOMPUTER 4. ALL RIGHT RESERVED |<br>
+			| THEMES BY : IRAWAN BAYU SETA |</p> 
+			</div>	
+	</div>
+<script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>		
+</body>	
+</html>	

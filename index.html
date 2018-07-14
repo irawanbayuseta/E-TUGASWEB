@@ -1,0 +1,190 @@
+<html>
+<head>
+    <script language="JavaScript">
+	var txt="Destination Wonderfull - index. " ;
+	var speed=300;
+	var refresh=null;
+	function action() { document.title=txt;
+	txt=txt.substring(1,txt.length)+txt.charAt(0);
+	refresh=setTimeout("action()",speed);}action();
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Demo Popup Image Gallery Jquery | Tutorial Web Design Indonesia"/>
+    <meta name="keywords" content="gallery photo, jquery plugin, jquery popup, lightbox, popup image, gambar popup, jquery, css3"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="popupimage/twd-base.css" />	
+	<link rel="stylesheet" type="text/css" href="popupimage/style.css" />
+	
+	<script type="text/javascript" src="popupimage/jquery.js"></script>
+	<script type="text/javascript" src="popupimage/jquery.lightbox-0.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="popupimage/jquery.lightbox-0.5.css" media="screen" />
+	
+	
+  
+</head>
+<body>
+    </div>	
+	<div class="container">
+		<div class="header">
+			<h1 align="center">Destination Wonderfull</h1>
+			<h4 align="center">Selamat Datang</h4>
+			<h5 align="center"> Disini Kami Menyediakan tempat wisata yang cocok buat Anda</h5>
+		</div>
+		<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html">Index</a>
+  </div>
+		<div class="main">
+			<div class="left">
+				<h3 align="center">Mendaftar</h3>
+					<ul>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="daftar.html">Daftar</a></li>
+					</ul>
+				
+			</div>
+			<section>
+			<div class="isi" id="gallery" >
+				<h3 align="center"><marquee>Silahkan pilih tempat wisata yang anda suka </marquee></h3>
+				<p  align="center"><strong>Dusun Bambu</strong></p>
+				<a href="dusunbambu/1.jpg" title="Dusun Bambu">
+				<p><img src="dusunbambu/1.jpg" title="Dusun Bambu"></p>
+				<p><a href="db.html">Baca Selengkapnya >> </a></p><br> 
+				<p  align="center"><strong>Situ Patenggang</strong></p>
+				<a href="situpatenggang/2/2.jpg" title="Situ Patenggang">
+				<p><img src="situpatenggang/2/2.jpg" alt=""></p>
+				<p><a href="sp.html">Baca Selengkapnya >> </a><br>
+				<p  align="center"><strong>Curug Cimahi</strong></p>
+				<a href="curugcimahi/1.jpg" title="Curug Cimahi">
+				<p><img src="curugcimahi/1.jpg" alt=""></p>
+				<p><a href="cc.html">Baca Selengkapnya >> </a> 
+				<p  align="center"><strong>Pantai Karang Tawulan</strong></p>
+				<a href="pantaikarangtawulan/1.jpg" title="Pantai Karang Tawulan">
+				<p><img src="pantaikarangtawulan/1.jpg" alt=""></p>
+				<p><a href="pk.html">Baca Selengkapnya >> </a><br> 
+				<p  align="center"><strong>Curug Cimanintin</strong></p>
+				<a href="curugcimanintin/1.jpg" title="Curug Cimanintin">
+				<p><img src="curugcimanintin/1.jpg" alt=""></p>
+				<p><a href="ccim.html">Baca Selengkapnya >> </a><br> 
+				<p  align="center"><strong>Kebun Teh Taraju</strong></p>
+				<a href="kebuntehtaraju/1.jpg" title="Kebun Teh Taraju">
+				<p><img src="kebuntehtaraju/1.jpg" alt=""></p>
+				<p><a href="kt.html">Baca Selengkapnya >> </a><br> 
+				<p  align="center"><strong>Tonjong Canyon</strong></p>
+				<a href="tonjongcanyon/1.jpg" title="Tonjong Canyon">
+				<p><img src="tonjongcanyon/1.jpg" alt=""></p>
+				<p><a href="tc.html">Baca Selengkapnya >> </a><br> 
+				<p  align="center"><strong>Situ Cileunca</strong></p>
+				<a href="situcileunca/1.jpg" title="Situ Cileunca">
+				<p><img src="situcileunca/1.jpg" alt=""></p>
+				<p><a href="sc.html">Baca Selengkapnya >> </a><br> 
+				<p  align="center"><strong>Ranca Upas</strong></p>
+				<a href="rancaupas/1.jpg" title="Ranca Upas">
+				<p><img src="rancaupas/1.jpg" alt=""></p>
+				<p><a href="ru.html">Baca Selengkapnya >> </a><br> 
+				<p  align="center"><strong>Dago Dreampark</strong></p>
+				<a href="dagodreampark/1.jpg" title="Dago Dreampark">
+				<p><img src="dagodreampark/1.jpg" alt=""></p>
+				<p><a href="dd.html">Baca Selengkapnya >> </a><br> 
+			</div>	
+            </section>			
+			<div class="right">
+				<h3 align="center">Terpopuler</h3>
+				<p>
+					<ul>
+					<li><a href="sumatra.html">Sumatra</a></li>
+					<li><a href="kalimantan.html">Kalimantan</a></li>
+					<li><a href="sulawesi.html">Sulawesi</a></li>
+					<li><a href="jawa.html">Jawa</a></li>
+					<li><a href="papua.html">Irian Jaya</a></li>
+					<li><a href="editor.html">>></a></li>
+					</ul>
+				</p>
+			</div>
+			<div class="right">
+				<h3 align="center">Search</h3>
+				<p>
+					<ul>
+					<li><input type="text" name="username"></li><br>
+					<button class="tombol5" type="submit">Search</button>
+					</ul>
+				</p>
+			</div>						
+		</div>
+		 
+	
+			<div class="footer">
+			<p align="center">| COPYRIGHT © 2018/2019 PEMROGRAMAN KOMPUTER 4. ALL RIGHT RESERVED |<br>
+			| THEMES BY : IRAWAN BAYU SETA |</p> 
+			</div>	
+	</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>	
+<script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+  <script type="text/javascript">
+	$(function() {
+		$('#gallery a').lightBox();
+	});
+	</script>
+</body>	
+</html>	

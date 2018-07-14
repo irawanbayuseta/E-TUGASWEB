@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Destination Wonderfull</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="jqClock.css" />
+    <script src="jquery.js"></script>
+    <script src="jqClock.min.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function(){    
+      $("#jam").clock({"format":"24","calendar":"true","langSet":"ina"});
+    });    
+  </script>
+  
+</head>
+<body>
+    </div>	
+	<div class="container">
+		<div class="header">
+			<h1 align="center">Destination Wonderfull</h1>
+			<h4 align="center">Selamat Datang</h4>
+			<h5 align="center"> Disini Kami Menyediakan tempat wisata yang cocok buat Anda</h5>
+		</div>
+		<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html">Index</a>
+  </div>
+		<div class="main">
+			<div class="left">
+				<h3 align="center">Mendaftar</h3>
+					<ul>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="daftar.html">Daftar</a></li>
+					</ul>
+				
+			</div>
+			<div class="isi" style="height:550px;">
+				<h3 align="center"><marquee>Destination Wonderfull </marquee></h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171122.505745269!2d96.14478562103648!3d-0.14290105402407402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2aad6120570311%3A0x1def4d17e789deb4!2sPulau+Sumatera!5e0!3m2!1sid!2sid!4v1531558236353" width="480" height="490" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>			
+			<div class="right">
+				<h3 align="center">Terpopuler</h3>
+				<p>
+					<ul>
+					<li><a href="sumatra.html">Sumatra</a></li>
+					<li><a href="kalimantan.html">Kalimantan</a></li>
+					<li><a href="sulawesi.html">Sulawesi</a></li>
+					<li><a href="jawa.html">Jawa</a></li>
+					<li><a href="papua.html">Irian Jaya</a></li>
+					<li><a href="editor.html">>></a></li>
+					</ul>
+				</p>
+			</div>
+			<div id="jam"></div>					
+		</div>
+		 
+	
+			<div class="footer">
+			<p align="center">| COPYRIGHT © 2018/2019 PEMROGRAMAN KOMPUTER 4. ALL RIGHT RESERVED |<br>
+			| THEMES BY : IRAWAN BAYU SETA |</p> 
+			</div>	
+	</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>	
+<script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+</body>	
+</html>	

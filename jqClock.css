@@ -1,0 +1,25 @@
+.jqclock { 
+            float:left; 
+			text-align:center; 
+			border: 1px Black solid; 
+			background: darkgrey; 
+			padding: 20px; 
+			margin:20px;
+			}
+  .clockdate { 
+            color: white; 
+			margin-bottom: 10px; 
+			font-size: 18px; 
+			display: block; 
+			font-family: "Harrington";
+			}
+  .clocktime { 
+            border: 2px inset White; 
+			background: Black; 
+			padding: 5px; 
+			font-size: 14px; 
+			font-family: "Courier"; 
+			color: LightGreen; 
+			margin: 2px; 
+			display: block; 
+			}

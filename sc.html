@@ -1,0 +1,114 @@
+<html>
+<head>
+	<script language="JavaScript">
+	var txt="Destination Wonderfull - Situ Cileunca Bandung. " ;
+	var speed=300;
+	var refresh=null;
+	function action() { document.title=txt;
+	txt=txt.substring(1,txt.length)+txt.charAt(0);
+	refresh=setTimeout("action()",speed);}action();
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body background="bc.jpg">
+    </div>	
+	<div class="container">
+		<div class="header">
+			<h1 align="center">Destination Wonderfull</h1>
+			<h4 align="center">Selamat Datang</h4>
+			<h5 align="center"> Disini Kami Menyediakan tempat wisata yang cocok buat Anda</h5>
+		</div>
+		<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html">Index</a>
+  </div>
+		<div class="main">
+			<div class="left">
+				<h3 align="center">Mendaftar</h3>
+					<ul>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="daftar.html">Daftar</a></li>
+					</ul>
+				
+			</div>
+			<div class="isi">
+				<h3 align="center">Situ Cileunca: Taman Wisata Indah dengan tarif murah</h3>
+				<p  align="center"><strong>Travel Destinations /<a href="#"> 2.6K</a> view</strong></p>
+				<p><img src="situcileunca/2.jpg" alt=""></p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Destination Wonderfull – Situ Cileunca merupakan salah satu keindahan Bandung Selatan yang menjadi 
+				wisata favorit karena memiliki panorama alam yang luar biasa indahnya.
+				Situ Cileunca ini sendiri awalnya merupakan sebutan bagi danau buatan yang memilikiluas 1.400 ha,
+				ini menunjuk kepada sebutan situ dalam bahasa sunda yang memiliki arti dalam bahasa Indonesia 'danau'.
+				akan tetapi, saat ini di Situ Cileunca Anda tidak hanya dimanjakan oleh danau saja, tetapi juga,
+				Anda akan dimanjakan dengan kebun Strawberry dan Gravity Adventure. Tarif tiket masuk
+				Situ Cileunca Pangalengan, Bandung Selatan tidak terlalu mahal, Anda hanya akan dikenakan biaya Rp25.000/per orang
+				dan jika Anda membawa mobil Anda dikenakan biaya masuk Rp3.000. Bukankah sangat murah?.<br> 
+				
+               <p  align="center"><strong>&nbsp;1&nbsp;</a></strong></p>
+				
+			</div>			
+			<div class="right">
+				<h3 align="center">Terpopuler</h3>
+				<p>
+					<ul>
+					<li><a href="sumatra.html">Sumatra</a></li>
+					<li><a href="kalimantan.html">Kalimantan</a></li>
+					<li><a href="sulawesi.html">Sulawesi</a></li>
+					<li><a href="jawa.html">Jawa</a></li>
+					<li><a href="papua.html">Irian Jaya</a></li>
+					<li><a href="editor.html">>></a></li>
+					</ul>
+				</p>
+			</div>
+            <div class="right">
+				<h3 align="center">Search</h3>
+				<p>
+					<ul>
+					<li><input type="text" name="username"></li><br>
+					<button class="tombol5" type="submit">Search</button>
+					</ul>
+				</p>
+			</div>						
+		</div>
+	
+			<div class="footer">
+			<p align="center">| COPYRIGHT © 2018/2019 PEMROGRAMAN KOMPUTER 4. ALL RIGHT RESERVED |<br>
+			| THEMES BY : IRAWAN BAYU SETA |</p> 
+			</div>	
+	</div>
+<script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>		
+</body>	
+</html>	
